@@ -2,7 +2,7 @@
 /opt/bitnami/spark/bin/spark-submit \
     --master spark://spark-master-service:7077 \
     --deploy-mode client \
-    --name "EnsembleLearner" \
+    --name "EnsembleModel" \
     --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.4 \
     --driver-memory 1g \
     --conf spark.driver.maxResultSize=1g \
