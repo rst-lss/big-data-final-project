@@ -16,24 +16,24 @@ We used a Python script to read data from the **Adult Dataset** and send each ro
 
 ### Table of Contents
 - **Scripts**
-  - [`deploy.sh.md`](./scripts/deploy.sh.md)
-  - [`clean.sh.md`](./scripts/clean.sh.md)
+  - [`deploy.sh`](./scripts/deploy.sh.md)
+  - [`clean.sh`](./scripts/clean.sh.md)
 - **Data Ingestor**
-  - [`Dockerfile.md`](./data-ingestor/Dockerfile.md)
-  - [`data-ingestor-deployment.yaml.md`](./data-ingestor/data-ingestor-deployment.yaml.md)
-  - [`data-ingestor.py.md`](./data-ingestor/data-ingestor.py.md)
+  - [`Dockerfile`](./data-ingestor/Dockerfile.md)
+  - [`data-ingestor-deployment.yaml`](./data-ingestor/data-ingestor-deployment.yaml.md)
+  - [`data-ingestor.py`](./data-ingestor/data-ingestor.py.md)
 - **Ensemble Model**
-  - [`Dockerfile.md`](./ensemble-model/Dockerfile.md)
-  - [`ensemble-model.py.md`](./ensemble-model/ensemble-model.py.md)
-  - [`ensemble-model-deployment.yaml.md`](./ensemble-model/ensemble-model-deployment.yaml.md)
-  - [`spark-submit-ensemble-model.sh.md`](./ensemble-model/spark-submit-ensemble-model.sh.md)
+  - [`Dockerfile`](./ensemble-model/Dockerfile.md)
+  - [`ensemble-model.py`](./ensemble-model/ensemble-model.py.md)
+  - [`ensemble-model-deployment.yaml`](./ensemble-model/ensemble-model-deployment.yaml.md)
+  - [`spark-submit-ensemble-model.sh`](./ensemble-model/spark-submit-ensemble-model.sh.md)
 - **Kafka Cluster**
-  - [`kafka-deployment.yaml.md`](./kafka-cluster/kafka-deployment.yaml.md)
-  - [`zookeeper-deployment.yaml.md`](./kafka-cluster/zookeeper-deployment.yaml.md)
+  - [`kafka-deployment.yaml`](./kafka-cluster/kafka-deployment.yaml.md)
+  - [`zookeeper-deployment.yaml`](./kafka-cluster/zookeeper-deployment.yaml.md)
 - **Spark Cluster**
-  - [`Dockerfile.md`](./spark-cluster/Dockerfile.md)
-  - [`spark-worker-deployment.yaml.md`](./spark-cluster/spark-worker-deployment.yaml.md)
-  - [`spark-master-deployment.yaml.md`](./spark-cluster/spark-master-deployment.yaml.md)
+  - [`Dockerfile`](./spark-cluster/Dockerfile.md)
+  - [`spark-worker-deployment.yaml`](./spark-cluster/spark-worker-deployment.yaml.md)
+  - [`spark-master-deployment.yaml`](./spark-cluster/spark-master-deployment.yaml.md)
 
 This document provides an overview of our implementation. For detailed deployment configurations, refer to the respective configuration files.
 
