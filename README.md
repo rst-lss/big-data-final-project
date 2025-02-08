@@ -3,8 +3,13 @@
 This repository contains the **Big Data** project by **Amin Haeri** and **Alireza Nazari**. The project is designed to handle real-time stream processing using distributed systems techniques and Apache Spark technologies.
 
 ## Project Overview
+![](./docs/c4-model.png)
 
 The project implements **Ensemble Learning on Streaming Data**. It leverages modern distributed systems tools and methodologies to achieve scalability and high performance.
+
+- **Documentation**: [Documents](./docs/index.md) 
+- **C4 Model Documentation**: [C4 Model Link](https://s.icepanel.io/qIhYcBpM0jN50I/9fDo)
+- **Video Footage**: [Video Link](https://drive.google.com/file/d/1Rl0fL7nk9RiHS9mVY38V39b6A4rGqNeL/view?usp=sharing)
 
 ## Prerequisites
 
