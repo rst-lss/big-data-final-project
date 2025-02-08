@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: spark-worker
-          image: bitnami/spark:latest
+          image: custom-spark:latest
           imagePullPolicy: IfNotPresent
           env:
             - name: SPARK_MODE
