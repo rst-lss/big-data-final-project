@@ -21,6 +21,6 @@ spec:
             - name: KAFKA_BROKER
               value: kafka-0.kafka-headless:9092
             - name: KAFKA_TOPIC
-              value: adult-income-stream
+              value: adult-stream
             - name: SEND_INTERVAL
               value: "0.5"
