@@ -1,4 +1,4 @@
-# `Dockerfile.md`
+# `Dockerfile`
 
 This Dockerfile is used to create a Docker image for an ensemble model implemented in PySpark. The image is designed to run the ensemble model in a containerized environment, which can then be deployed inside a Kubernetes cluster.
 
