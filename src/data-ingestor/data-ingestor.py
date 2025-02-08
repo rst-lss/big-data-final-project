@@ -7,6 +7,10 @@ import requests
 from kafka import KafkaProducer
 from sklearn.preprocessing import LabelEncoder
 
+KAFKA_BROKER = os.getenv("KAFKA_BROKER", "kafka-0.kafka-headless:9092")
+KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "adult-stream")
+SEND_INTERVAL = float(os.getenv("SEND_INTERVAL", 0.1))
+
 
 def download_dataset():
     url = "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data"
@@ -21,7 +25,7 @@ def download_dataset():
 
 
 producer = KafkaProducer(
-    bootstrap_servers=["kafka-0.kafka-headless:9092"],
+    bootstrap_servers=[KAFKA_BROKER],
     value_serializer=lambda x: json.dumps(x).encode("utf-8"),
 )
 
@@ -69,11 +73,10 @@ for column in categorical_columns:
     df[column] = le.fit_transform(df[column])
     encoders[column] = le
 
-topic = "adult-stream"
 while True:
     for _, row in df.iterrows():
         data = row.to_dict()
-        producer.send(topic, value=data)
-        time.sleep(0.5)
+        producer.send(KAFKA_TOPIC, value=data)
+        time.sleep(SEND_INTERVAL)
 
     producer.flush()
